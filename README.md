@@ -65,3 +65,16 @@ This HR Analytics Project using Power BI offers valuable insights into workforce
 - **TotalEmployees:** 
   ```DAX
   TotalEmployees = DISTINCTCOUNT('Dim - Employee'[EmployeeID])
+
+- **InactiveEmployees:**
+  ```DAX
+   InactiveEmployees = CALCULATE([TotalEmployees], 'Dim - Employee'[Attrition] = "Yes")
+
+ - **% Attrition Rate:**
+   ```DAX
+   % Attrition Rate = DIVIDE([InactiveEmployees],[TotalEmployees])
+   
+- **TotalEmployeesDate:**
+  ```DAX
+  TotalEmployeesDate = CALCULATE([TotalEmployees], USERELATIONSHIP('Dim - Employee'[HireDate], DimDate[Date]))
+
