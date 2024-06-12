@@ -1,5 +1,7 @@
 # Atlas Labs HR Analytics: Power BI Project
 
+![](https://github.com/yanny-alt/Atlas-Labs-HR-Analytics-Power-BI-Project/blob/main/Images/scott-graham-5fNmWej4tAA-unsplash.jpg)
+
 ## Overview
 The core goal of this case study is to build a report using fictitious datasets from a tech company called Atlas Labs. The Atlas Labs HR team wants to monitor key metrics related to employees. Their secondary goal is to understand what factors impact employee attrition.
 
@@ -12,7 +14,14 @@ This project uses fictitious data from Atlas Labs, a leading tech company. The m
 - Provide actionable recommendations to improve HR strategies and organizational performance.
 
 ## Dashboard Link
-Access the Power BI dashboard [here](link-to-dashboard).
+The report contains 4 interactive pages:
+
+![](https://github.com/yanny-alt/Atlas-Labs-HR-Analytics-Power-BI-Project/blob/main/Images/Overview%20Page.png)
+![](https://github.com/yanny-alt/Atlas-Labs-HR-Analytics-Power-BI-Project/blob/main/Images/Demographics%20Page.png)
+![](https://github.com/yanny-alt/Atlas-Labs-HR-Analytics-Power-BI-Project/blob/main/Images/Performance%20Tracker%20Page.png)
+![](https://github.com/yanny-alt/Atlas-Labs-HR-Analytics-Power-BI-Project/blob/main/Images/Attrition%20Page.png)
+
+Access the Power BI dashboard [here](https://app.powerbi.com/view?r=eyJrIjoiOWVmNTM0ZDQtOTYxOS00NGNhLWE4YWItOTlkNGMyNGMxMzQzIiwidCI6IjQ5MWM2ZTNhLTA3MjItNDhmMi1iMDFhLWFhMzliODc0MGYxNiJ9).
 
 ## Project Components
 
@@ -62,6 +71,8 @@ For this case study, we use the Kimball modeling approach to model our data. The
 - **Performance Ratings Fact Table:** Central to our analysis, containing yearly employee reviews with 11 columns and multiple rows per employee.
 - **Dimension Tables:** Five dimension tables—Employee, Education Level, Rating Level, Satisfied Level, and Date—provide contextual information, enriching our exploration.
 - **Calculated Table:** Dim — Date table links the Fact — Performance Rating table and Dim — Employee table, with secondary inactive relationships to adhere to Power BI's limitations.
+
+You can find the data model below: ![](https://github.com/yanny-alt/Atlas-Labs-HR-Analytics-Power-BI-Project/blob/main/Images/Atlas%20Labs%20HR%20Data%20Model.png)
 
 ### Key Columns
 - **Performance Ratings Fact Table:** PerformanceID, EmployeeID, ReviewDate, EnvironmentSatisfaction, JobSatisfaction, RelationshipSatisfaction, WorkLifeBalance, SelfRating, ManagerRating, TrainingOpportunitiesWithinYear, TrainingOpportunitiesTaken.
